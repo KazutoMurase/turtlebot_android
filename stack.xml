@@ -1,0 +1,10 @@
+<stack>
+  <description brief="turtlebot_android">
+    This is the stack of android applications for turtlebot
+  </description>
+  <author>Jorge</author>
+  <license>Apache 2.0</license>
+  <review status="unreviewed" notes="" />
+  <url>http://ros.org/wiki/turtlebot_android</url>
+</stack>
+
