@@ -97,7 +97,11 @@ public class TurtlebotDashboard extends LinearLayout implements DashboardInterfa
             modeButton.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                            onModeButtonClicked();
+        				new Thread(new Runnable() {
+        					public void run() {
+        						onModeButtonClicked();
+        					}
+        				}).start();
                     }
             });
             modeWaitingSpinner = (ProgressBar) findViewById(R.id.mode_waiting_spinner);
